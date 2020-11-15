@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:WpfApp1"
+mc:Ignorable="d"
+Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lbTovar" Margin="20,142,0,142"/>
+        <Button x:Name="btnAdd" Content="Добавить" HorizontalAlignment="Left" Margin="649,73,0,0" VerticalAlignment="Top" Height="30" Width="127" Click="btnAdd_Click"/>
+        <ComboBox x:Name="cbName" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" Width="127" Height="30">
+            <ComboBoxItem Content="Зубная паста"/>
+            <ComboBoxItem Content="Помада"/>
+            <ComboBoxItem Content="Крем"/>
+            <ComboBoxItem Content="Пудра"/>
+        </ComboBox>
+        <TextBox x:Name="tbP" HorizontalAlignment="Left" Margin="282,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tbY" HorizontalAlignment="Left" Margin="400,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tbVC" HorizontalAlignment="Left" Margin="164,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.49,0.552"/>
+        <TextBox x:Name="tbSL" HorizontalAlignment="Left" Margin="520,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Артикул" HorizontalAlignment="Left" Margin="187,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="313,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Год выпуска" HorizontalAlignment="Left" Margin="411,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Срок годности(мес.)" HorizontalAlignment="Left" Margin="510,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbM" HorizontalAlignment="Left" Margin="400,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Месяц_выпуска" Content="Месяц выпуска" HorizontalAlignment="Left" Margin="403,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbD" HorizontalAlignment="Left" Margin="400,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label Content="День выпуска" HorizontalAlignment="Left" Margin="407,4,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
