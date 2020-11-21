@@ -136,11 +136,11 @@ namespace WpfApp1
         {
             lbTovar.Items.Clear();
 
-            var selectedType = (Tovar.Name)cbNameFilter.SelectedIndex;
+            
            
             foreach (var tovar in tovars)
             {
-                if (tovar.name == selectedType || selectedType == Tovar.Name.Any)
+               
                     lbTovar.Items.Add(tovar);
             }
         }
@@ -216,9 +216,9 @@ namespace WpfApp1
                 tbVC.Text = tovarr.vendorCode.ToString();
                 tbP.Text = tovarr.price.ToString();
                 tbSL.Text = tovarr.expirationMonths.ToString();
-                tbY.Text = tovarr.Date.ToString();
-                tbD.Text = " ";
-                tbM.Text = " ";
+                tbY.Text = tovarr.Date.Year.ToString();
+                tbD.Text = tovarr.Date.Day.ToString();
+                tbM.Text = tovarr.Date.Month.ToString();
             }
         catch (Exception ex)
         {
